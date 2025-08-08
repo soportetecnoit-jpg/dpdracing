@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mecánica DPD Racing Team</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #000000;
+      color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background-color: #FFD700;
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 300px;
+      height: auto;
+    }
+
+    h1 {
+      margin: 20px 0;
+      color: #FFD700;
+      font-size: 2em;
+      text-align: center;
+    }
+
+    p {
+      max-width: 600px;
+      text-align: center;
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #CCCCCC;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px 0;
+      gap: 20px;
+    }
+
+    .service-card {
+      background-color: #1a1a1a;
+      border: 2px solid #FFD700;
+      border-radius: 8px;
+      padding: 20px;
+      width: 220px;
+      text-align: center;
+    }
+
+    .service-card h2 {
+      color: #FFD700;
+      margin-bottom: 10px;
+      font-size: 1.3em;
+    }
+
+    .cta-button {
+      background-color: #FFD700;
+      color: #000000;
+      border: none;
+      padding: 15px 25px;
+      font-size: 1.2em;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 30px 0;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #e6c200;
+    }
+
+    .contact-info {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      background-color: #1a1a1a;
+      border: 2px solid #FFD700;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .contact-info p {
+      color: #FFD700;
+      font-size: 1.2em;
+      margin-bottom: 15px;
+    }
+
+    .whatsapp-button {
+      background-color: #25D366;
+      color: #FFFFFF;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1em;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebe5d;
+    }
+
+    footer {
+      background-color: #111111;
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      color: #777777;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="C:\Users\MCORTON\Desktop\Musica\dpd.png" alt="Logo Mecánica DPD Racing Team" />
+  </header>
+
+  <h1>Bienvenidos a Mecánica DPD Racing Team</h1>
+  <p>Especialistas en vehículos nafta, diesel, nacionales e importados. Servicio integral con pasión por la alta performance.</p>
+
+  <section class="services">
+    <div class="service-card">
+      <h2>Nafta</h2>
+      <p>Mantenimiento y reparación completa de vehículos a nafta.</p>
+    </div>
+    <div class="service-card">
+      <h2>Diesel</h2>
+      <p>Servicio experto en sistemas diesel modernos y tradicionales.</p>
+    </div>
+    <div class="service-card">
+      <h2>Nacionales</h2>
+      <p>Atendemos todas las marcas y modelos de producción nacional.</p>
+    </div>
+    <div class="service-card">
+      <h2>Importados</h2>
+      <p>Diagnóstico avanzado y repuestos originales para importados.</p>
+    </div>
+  </section>
+
+  <button class="cta-button" onclick="mostrarContacto()">Solicitar Turno</button>
+
+  <div class="contact-info" id="contacto">
+    <p>Contáctanos: +54 11 5761-4586</p>
+    <a 
+      href="https://wa.me/541157614586" 
+      target="_blank" 
+      class="whatsapp-button"
+    >
+      Enviar WhatsApp
+    </a>
+  </div>
+
+  <footer>
+    © 2025 Mecánica DPD Racing Team - República de Chile 2167
+  </footer>
+
+  <script>
+    function mostrarContacto() {
+      document.getElementById('contacto').style.display = 'flex';
+    }
+  </script>
+
+</body>
+</html>
